@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.youth.banner.Banner
+    android:id="@+id/banner"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    </com.youth.banner.Banner>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/button1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/chu"
+            android:gravity="center_horizontal|bottom"/>
+        <RadioButton
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/qiao"
+            android:gravity="center_horizontal|bottom"/>
+        <RadioButton
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/you"
+            android:gravity="center_horizontal|bottom"/>
+        <RadioButton
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/li"
+            android:gravity="center_horizontal|bottom"/>
+    </RadioGroup>
+</LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liu.administratorexample.yunifang.Home">
+    <RadioGroup
+
+        android:id="@+id/home_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <RadioButton
+            android:id="@+id/homepager"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:checked="true"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="首页"
+            android:gravity="center_horizontal|bottom"
+            android:background="@drawable/home"
+            />
+
+        <RadioButton
+            android:id="@+id/fenlei"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="分类"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal|bottom"
+            android:background="@drawable/fenlei"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="购物车"
+            android:gravity="center_horizontal|bottom"
+            android:background="@drawable/shop"
+            android:id="@+id/shop_car" />
+
+        <RadioButton
+            android:id="@+id/my"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:layout_weight="1"
+            android:text="我的"
+            android:gravity="center_horizontal|bottom"
+            android:background="@drawable/my"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/three_multicolour_text"
+        android:layout_above="@id/home_rg"
+        android:layout_width="match_parent"
+        android:background="@drawable/text_shap"
+        android:layout_height="1dp" />
+    <FrameLayout
+        android:layout_above="@id/three_multicolour_text"
+        android:id="@+id/three_login_fargment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>
